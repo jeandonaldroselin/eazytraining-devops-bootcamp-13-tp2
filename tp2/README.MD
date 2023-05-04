@@ -14,19 +14,13 @@ Contenu présent dans Dockerfile
 
 ## Étape 3 : cloner le projet static-website-example
 
-Avec la commande suivante :
-
-```bash
-
-git clone https://github.com/diranetafen/static-website-example.git
-
-```
+Contenu présent dans DOckerfile (git clone https://github.com/diranetafen/static-website-example.git)
 
 ## Étape 4 : Lancer un build en local et tester l'image
 
 Contenu présent dans Dockerfile
 
-## Étape 5 : Publier l'image sur le registry public Docker Hub
+## Étape 5 : Publier l'image sur le registry public Docker Hub manuellement
 
 Avec la commande suivante :
 
@@ -35,7 +29,7 @@ Avec la commande suivante :
 docker image push jeandonaldroselin/eazytraining-devops-bootcamp-13-tp2:latest
 
 ```
-## Étape 6 : Automatiser le déploiement public Docker Hub
+## Étape 6 : Automatiser le déploiement sur le registry public Docker Hub
 
 Le déploiement est est désormais déclenché automatiquement suite à chaque modification de la branche main (git push, PR ou modif en ligne). Les fichiers permettant cet automatisation se situent .github/workflows
 

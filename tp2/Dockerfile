@@ -12,6 +12,4 @@ RUN git clone https://github.com/diranetafen/static-website-example.git /var/www
 
 EXPOSE 80
 
-ENTRYPOINT ["nginx"]
-
-CMD ["-g", "daemon off;"]
+ENTRYPOINT ["nginx", "-g", "daemon off;"]
