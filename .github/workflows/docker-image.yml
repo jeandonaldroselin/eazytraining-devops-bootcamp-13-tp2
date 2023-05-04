@@ -3,8 +3,12 @@ name: Docker Image CI
 on:
   push:
     branches: [ "main" ]
+    paths:
+      - tp2/**
   pull_request:
     branches: [ "main" ]
+    paths:
+      - tp2/**
 
 jobs:
 
@@ -17,7 +21,7 @@ jobs:
     - name: Docker build and push
       uses: cloudposse/github-action-docker-build-push@1.11.0
       with:
-        workdir: './'
+        workdir: './tp2/'
         file: 'Dockerfile' # optional, default is Dockerfile
         organization: 'jeandonaldroselin'
         repository: 'bootcamp-devops-1-docker-tp2'
