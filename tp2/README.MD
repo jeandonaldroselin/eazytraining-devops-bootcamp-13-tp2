@@ -8,13 +8,13 @@ Ce TP consiste à créer une image Docker en suivant les étapes suivantes :
 
 Contenu présent dans Dockerfile
 
-## Étape 2 : installer git et nginx
+## Étape 2 : Installer git et nginx
 
 Contenu présent dans Dockerfile
 
-## Étape 3 : cloner le projet static-website-example
+## Étape 3 : Cloner le projet static-website-example
 
-Contenu présent dans DOckerfile (git clone https://github.com/diranetafen/static-website-example.git)
+Contenu présent dans Dockerfile (git clone https://github.com/diranetafen/static-website-example.git)
 
 ## Étape 4 : Lancer un build en local et tester l'image
 
@@ -31,7 +31,7 @@ docker image push jeandonaldroselin/eazytraining-devops-bootcamp-13-tp2:latest
 ```
 ## Étape 6 : Automatiser le déploiement sur le registry public Docker Hub
 
-Le déploiement est est désormais déclenché automatiquement suite à chaque modification de la branche main (git push, PR ou modif en ligne). Les fichiers permettant cet automatisation se situent .github/workflows
+Le déploiement est désormais déclenché automatiquement suite à chaque modification de la branche main (git push, PR ou modif en ligne). Les fichiers permettant cet automatisation se situent .github/workflows
 
 
 ----
