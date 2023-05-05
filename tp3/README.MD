@@ -1,18 +1,18 @@
-Bootcamp Devops Eazytraining · [1 Docker](../) · TP3
+# Bootcamp Devops Eazytraining
 
-----------
+## [Module 1 · Docker · Conteneurisation](https://github.com/jeandonaldroselin/eazytraining-devops-bootcamp-docker) > TP3
 
-Ce TP consiste à créer une réseau Docker puis deux conteneurs et réussir à réaliser un ping de part et d'autre.
+Ce TP consiste à créer un réseau Docker puis d'y déployer deux conteneurs qui vont communiquer (via un ping)
 
-## Étape 1 : Créer un Dockerfile
+#### Étape 1 : Créer un Dockerfile
 
 On reprend le contenu du [Dockerfile du TP2](../tp2/Dockerfile)
 
-## Étape 2 : Ajouter l'installation du paquet iputils-ping
+#### Étape 2 : Ajouter l'installation du paquet iputils-ping
 
 Contenu présent dans Dockerfile
 
-## Étape 3 : Créer une nouvelle image (build)
+#### Étape 3 : Créer une nouvelle image (build)
 
 Avec la commande suivante :
 
@@ -20,7 +20,7 @@ Avec la commande suivante :
 docker build . -t jeandonaldroselin/bootcamp-devops-1-docker-tp3:latest
 ```
 
-## Étape 4 : Créer un réseau bridge my-net
+#### Étape 4 : Créer un réseau bridge my-net
 
 Avec la commande suivante :
 
@@ -31,7 +31,7 @@ docker network ls
 
 Normalement, vous devriez voir le réseau apparaitre dans la liste avec le nom my-net dans la colonne NAME.
 
-## Étape 5 : Créer deux conteneur (mycontainer1 et mycontainer2) rattachés à ce réseau my-net
+#### Étape 5 : Créer deux conteneur (mycontainer1 et mycontainer2) rattachés à ce réseau my-net
 
 Il existe plusieurs méthodes pour rattacher des conteneurs à un réseau, nous allons utiliser celle-là qui est plus éfficace dans le cadre d'un TP :
 
@@ -41,7 +41,7 @@ docker run --name mycontainer1 -d --network my-net --publish 8080:80 jeandonaldr
 docker run --name mycontainer2 -d --network my-net --publish 8081:80 jeandonaldroselin/bootcamp-devops-1-docker-tp3:latest
 ```
 
-## Étape 6 : Obtenir l'adresse IP des conteneurs crées avec docker inspect
+#### Étape 6 : Obtenir l'adresse IP des conteneurs crées avec docker inspect
 
 Étant donné que nous aurons besoin de l'adresse IP des conteneurs mycontainer1 et mycontainer2
 dans les étapes 5 et 6, il convient d'obtenir ses IP en amont.
@@ -56,7 +56,7 @@ Obtenez l'IP du conteneur mycontainer2 en executant la commande suivante :
 docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' mycontainer2
 ```
 
-## Étape 5 : Effectuer le ping depuis le conteneur mycontainer1
+#### Étape 5 : Effectuer le ping depuis le conteneur mycontainer1
 
 Connectez-vous au terminal du conteneur mycontainer1 avec la commande suivante :
 
@@ -88,7 +88,7 @@ ping mycontainer2
 
 Vous obtiendrez le même résultat.
 
-## Étape 6 : Effectuer le ping depuis le conteneur mycontainer2
+#### Étape 6 : Effectuer le ping depuis le conteneur mycontainer2
 
 Connectez-vous au terminal du conteneur mycontainer2 avec la commande suivante :
 
@@ -122,6 +122,6 @@ Vous obtiendrez le même résultat.
 
 ----
 
-# Divers
+### Divers
 
 1) L'environnement de travail permettant la réalisation de ce TP a été construit avec la configuration vagrant suivante => https://github.com/diranetafen/cursus-devops/tree/master/vagrant/docker.
