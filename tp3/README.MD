@@ -124,4 +124,4 @@ Vous obtiendrez le même résultat.
 
 ### Divers
 
-1) L'environnement de travail permettant la réalisation de ce TP a été construit avec la configuration vagrant suivante => https://github.com/diranetafen/cursus-devops/tree/master/vagrant/docker.
+1) L'environnement de travail permettant la réalisation de ce TP a été monté avec la configuration vagrant suivante => https://github.com/diranetafen/cursus-devops/tree/master/vagrant/docker.

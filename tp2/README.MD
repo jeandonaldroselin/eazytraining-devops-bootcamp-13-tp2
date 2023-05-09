@@ -40,4 +40,4 @@ Le déploiement est désormais déclenché automatiquement suite à chaque modif
 
 1) Le résultat est disponible ici => https://hub.docker.com/r/jeandonaldroselin/bootcamp-devops-1-docker-tp2.
 
-2) L'environnement de travail permettant la réalisation de ce TP a été construit avec la configuration vagrant suivante => https://github.com/diranetafen/cursus-devops/tree/master/vagrant/docker.
+2) L'environnement de travail permettant la réalisation de ce TP a été monté avec la configuration vagrant suivante => https://github.com/diranetafen/cursus-devops/tree/master/vagrant/docker.
