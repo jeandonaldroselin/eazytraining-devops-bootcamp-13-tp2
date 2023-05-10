@@ -16,6 +16,10 @@ Vous trouverez ci-dessous l'ensemble des réalisations concernant le module.
 
 [Accéder au TP](./tp4/)
 
+#### TP5 : Créer une première infrastructure as code avec docker compose
+
+[Accéder au TP](./tp5/)
+
 ----
 
 ## Table de matière des modules
