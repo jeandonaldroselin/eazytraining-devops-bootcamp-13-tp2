@@ -29,5 +29,3 @@ volumes:
   odoo-db-data:
 networks:
   odoo_network:
-    name: odoo_network
-    external: true

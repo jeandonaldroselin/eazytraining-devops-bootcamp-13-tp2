@@ -20,6 +20,10 @@ Vous trouverez ci-dessous l'ensemble des réalisations concernant le module.
 
 [Accéder au TP](./tp5/)
 
+#### TP6 : Créer un premier cluster en utilisant docker swarm et docker compose
+
+[Accéder au TP](./tp6/)
+
 ----
 
 ## Table de matière des modules
@@ -36,7 +40,7 @@ Vous trouverez ci-dessous l'ensemble des réalisations concernant le module.
 
 [4 · Jenkins · Benchmark outil 2](https://github.com/jeandonaldroselin/eazytraining-devops-bootcamp-jenkins)
 
-#### Mois 2 (Automatisation d'infrastructure)
+#### Mois 3 (Automatisation d'infrastructure)
 
 [5 · Ansible · On Premise](https://github.com/jeandonaldroselin/eazytraining-devops-bootcamp-ansible)
 
